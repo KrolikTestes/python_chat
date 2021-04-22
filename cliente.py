@@ -12,13 +12,13 @@ buffer_size = 2048
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # Criação de um objeto socket
 s.connect((host, port))                                 # Uso do connect para fazer a conexão com host e porta
 
-nickname = input("Nickname: ")                          # Teste
+nickname = input("Nickname: ")                          
 
 
 def receive():
     while True:
         try:
-            mensagem = s.recv(buffer_size).decode()
+            mensagem = s.recv(buffer_size).decode()     # Aiaiaiaiaiaiaiaiaaiaiaiaiaiaiaiaiweluifjnweogjwoegjwegweg
             
             if mensagem != "":
                 print(mensagem)
